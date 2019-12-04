@@ -1,0 +1,64 @@
+.name-ttt {
+    position: relative;
+    height: 80px;
+    width: 100%;
+}
+
+.banner-item p {
+    width: 400px;
+    position: absolute;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes slidein {
+    from {
+        left: 0%;
+        /* margin-left: 50%;
+        width: 500%; */
+    }
+
+    to {
+        left: 50%;
+        /* margin-left: 0%;
+        width: 100%; */
+    }
+}
+
+.xxx:hover .facebook ,.yyy:hover .twitter {
+        animation-duration: 5s;
+        animation-name: xxx;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+}
+@keyframes xxx {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg)
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .name-ttt {
+        position: relative;
+        height: 110px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    @keyframes slidein {
+        from {
+            left: 0%;
+        }
+
+        to {
+            left: 50%;
+        }
+
+    }
+}

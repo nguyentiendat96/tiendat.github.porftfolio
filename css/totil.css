@@ -1,0 +1,130 @@
+  .social{
+    font-family: "Helvetica", "Arial";
+    text-align: center;
+    display: flex;
+    margin: 10px 580px;
+  }
+  .social a {
+    background: #969696;
+    color: #222;
+    border-radius: 100%;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 2px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+  }
+  .social a.icon:before {
+    font-family: "FontAwesome", sans-serif;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .social a.facebook:before {
+    content: '\f09a';
+  }
+  
+  .social a.twitter:before {
+    content: '\f099';
+  }
+  
+  .social a.github:before {
+    content: '\f113';
+  }
+  
+  .social a.dribble:before {
+    content: '\f17d';
+  }
+  
+  .social a.pinterest:before {
+    content: '\f0d2';
+  }
+  
+  .social a span {
+    background: #fff;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    position:  absolute;
+    bottom: 0;
+    left: -25px;
+    right: -25px;
+    padding: 5px 7px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+  }
+  
+  .social a span:before {
+    content: '';
+  /*   width: 0;
+    height: 0; */
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 40px;
+  }
+  
+  .social a:hover span {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /* Hover through the icons */
+  
+  .social a.facebook:hover {
+    background-color: #4183d7; 
+    color: #bfbfbf;
+  }
+  
+  .social a.facebook span {
+    color: #4183d7;
+  }
+  
+  .social a.twitter:hover {
+    background-color: #19b5fe;
+    color: #fff;
+  }
+  
+  .social a.twitter span {
+    color: #19b5fe;
+  }
+  
+  .social a.github:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .social a.github span {
+    color: #000;
+  }
+  
+  .social a.dribble:hover {
+    background-color: #f62459;
+    color: #fff;
+  }
+  
+  .social a.dribble span {
+    color: #f62459;
+  }
+  
+  .social a.pinterest:hover {
+    background-color: #f22613;
+    color: #fff;
+  }
+  
+  .social a.pinterest span {
+    color: #f22613;
+  }
+  
+  

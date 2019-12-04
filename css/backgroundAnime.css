@@ -1,0 +1,45 @@
+.background {
+  background-color: #252423;
+  position: fixed;
+  top:10vh;
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+}
+.animation-wrapper {
+  width: 50%;
+  padding-bottom: 50%;
+}
+
+.sphere-animation {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 80px;
+}
+.sphere{
+  width: 80px;
+    height: 60px;
+}
+.sphere path {
+  fill: url(#sphereGradient);
+  stroke-width: 30px;
+  stroke: rgba(80, 80, 80, .35);
+  backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .sphere path {
+    stroke-width: 30px;
+  }
+  .sphere{
+    transform: scale(27.5);
+  }
+  .sphere-animation {
+    position: absolute;
+    top: 78%;
+    left: 18%;
+    width: 1000px;
+    margin: -290px 0 0 -290px;
+  }
+}
